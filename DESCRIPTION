@@ -17,3 +17,5 @@ Imports:
     lifecycle,
     rlang,
     dplyr
+URL: https://github.com/jagadishkatam/mysummary
+BugReports: https://github.com/jagadishkatam/mysummary/issues
