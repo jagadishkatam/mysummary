@@ -32,7 +32,7 @@ my_summmary <- function(dataset,..., gcols, acols, param){
     stop('no data exists')
   } else {
     # browser()
-    map(acols, function(x) {
+   data <- map(acols, function(x) {
       dataset %>% filter(...) %>% group_by(!!!gcols) %>% summarise(n=n(),
                                                                 mean=mean(.data[[x]]),
                                                                 !!param := x)
@@ -40,5 +40,6 @@ my_summmary <- function(dataset,..., gcols, acols, param){
     )
 
   }
+  return(data)
 }
 
