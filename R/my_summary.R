@@ -25,7 +25,7 @@ my_summmary <- function(dataset,..., gcols, acols, param){
 
   # subset <- rlang::enexprs(subset)
   gcols <- rlang::syms(gcols)
-
+# masked the param using rlang enquo function
   param <- rlang::enquo(param)
 
   if (objectvec2) {
