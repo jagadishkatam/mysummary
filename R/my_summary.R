@@ -27,7 +27,7 @@ my_summmary <- function(dataset,..., gcols, acols, param){
   gcols <- rlang::syms(gcols)
 # masked the param using rlang enquo function
   param <- rlang::enquo(param)
-
+# derivation logic
   if (objectvec2) {
     stop('no data exists')
   } else {
